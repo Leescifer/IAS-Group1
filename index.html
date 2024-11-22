@@ -6,7 +6,103 @@
     <title>Group 1</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="bg-slate-100">
+
+    <button
+    id="sidebar-toggle"
+    class="fixed z-50 p-2 text-white bg-gray-300 lg:hidden top-4 right-4"
+  >
+    <ion-icon name="menu-outline"></ion-icon>
+  </button>
+
+
+
+    <aside
+      id="sidebar"
+      class="fixed top-0 left-0 z-40 hidden h-full border shadow-md bg-neutral-400 border-neutral-300 lg:w-64 lg:block"
+    >
+      <div class="px-8 py-2 mx-auto mt-6">
+        <a class="text-xl font-semibold text-black" href="#" aria-label="Brand"
+          >Lee Ter University</a
+        >
+      </div>
+      <nav class="w-full p-6">
+        <ul class="space-y-1.5">
+          <li class="text-xl font-light">
+            <a
+              class="flex items-center gap-x-3.5 py-2 px-2.5 text-black rounded-lg hover:bg-gray-900 hover:text-white"
+              href="#"
+              data-section="dashboard"
+            >
+              <ion-icon name="planet-outline"></ion-icon>
+              Dashboard
+            </a>
+          </li>
+          <li class="text-xl font-light">
+            <a
+              class="flex items-center gap-x-3.5 py-2 px-2.5 text-black rounded-lg hover:bg-gray-900 hover:text-white"
+              href="#"
+              data-section="students"
+            >
+              <ion-icon name="school-outline"></ion-icon>
+              Students
+            </a>
+          </li>
+          <li class="text-xl font-light">
+            <a
+              class="flex items-center gap-x-3.5 py-2 px-2.5 text-black rounded-lg hover:bg-gray-900 hover:text-white"
+              href="#"
+              data-section="subjects"
+            >
+              <ion-icon name="book-outline"></ion-icon>
+              Subjects
+            </a>
+          </li>
+          <li class="text-xl font-light">
+            <a
+              class="flex items-center px-2 py-2 text-black rounded-lg gap-x-3 hover:bg-gray-900 hover:text-white"
+              href="#"
+              data-section="schedules"
+            >
+              <ion-icon name="calendar-outline"></ion-icon>
+              Schedules
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <footer class="">
+        <div></div>
+      </footer>
+    </aside>
+
+    <!-- Main Content -->
+    <main id="main-content" class="flex-1 p-6 ml-0 lg:ml-64">
+      <section id="dashboard" class="active">
+        <h1 class="text-xl font-bold">Welcome Admin</h1>
+        <p>
+          Welcome to the dashboard! Here you'll find an overview of the
+          university's operations.
+        </p>
+      </section>
+
+      <section id="students" class="hidden">
+        <h1 class="text-xl font-bold">Students</h1>
+        <p>Manage student details, enrollment, and records here.</p>
+      </section>
+
+      <section id="subjects" class="hidden">
+        <h1 class="text-xl font-bold">Subjects</h1>
+        <p>Explore and manage the subjects offered by the university.</p>
+      </section>
+
+      <section id="schedules" class="hidden">
+        <h1 class="text-xl font-bold">Schedules</h1>
+        <p>View and manage class and event schedules here.</p>
+
+        
+      </section>
+    </main>
 
 
     
@@ -36,7 +132,7 @@
 
 
 
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script
       type="module"
