@@ -1,12 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
     const sidebar = document.getElementById('sidebar');
     const toggleButton = document.getElementById('sidebar-toggle');
+    const menuIcon = toggleButton.querySelector('ion-icon[name="menu-outline"]');
+    const closeIcon = toggleButton.querySelector('ion-icon[name="close-outline"]');
     const links = document.querySelectorAll('[data-section]');
     const sections = document.querySelectorAll('main section');
 
     // Sidebar toggle 
     toggleButton.addEventListener('click', () => {
-        sidebar.classList.toggle('hidden');
+
+        sidebar.classList.toggle('hidden');    
+        menuIcon.classList.toggle('hidden');
+        closeIcon.classList.toggle('hidden');
     });
 
     // Section navigation 

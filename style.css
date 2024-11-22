@@ -6,9 +6,13 @@
 
 :root{
     --main-color-: #561C24;
-    --min-main-color-: #6D2932;
     --sub-color-: #C7B7A3;
     --text-color-: #E8D8C4;
+   
+}
+
+body{
+    background-color: var(--sub-color-);
 }
 
 

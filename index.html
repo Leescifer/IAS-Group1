@@ -6,13 +6,15 @@
     <title>Group 1</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="bg-slate-100">
+  <body>
+
     <button
-      id="sidebar-toggle"
-      class="fixed z-50 p-2 text-white bg-gray-300 lg:hidden top-4 right-4"
-    >
-      <ion-icon name="menu-outline"></ion-icon>
-    </button>
+    id="sidebar-toggle"
+    class="fixed z-50 p-2 text-white lg:hidden top-4 right-4"
+>
+    <ion-icon name="menu-outline"></ion-icon>
+    <ion-icon name="close-outline" class="hidden"></ion-icon>
+</button>
 
     <aside
       id="sidebar"
@@ -34,7 +36,7 @@
               Title
             </a>
           </li>
-          <li class="text-md font-light">
+          <li class="text-md md:text:sm font-light">
             <a
               class="flex items-center gap-x-3.5 py-2 px-2.5 rounded-lg hover:bg-gray-900 hover:text-white"
               href="#"
@@ -44,7 +46,7 @@
               Angeline
             </a>
           </li>
-          <li class="text-md font-light">
+          <li class="text-md font-light md:text:sm">
             <a
               class="flex items-center gap-x-3.5 py-2 px-2.5 rounded-lg hover:bg-gray-900 hover:text-white"
               href="#"
@@ -54,7 +56,7 @@
               Angilo
             </a>
           </li>
-          <li class="text-md font-light">
+          <li class="text-md font-light md:text:sm">
             <a
               class="flex items-center px-2 py-2 rounded-lg gap-x-3 hover:bg-gray-900 hover:text-white"
               href="#"
@@ -64,7 +66,7 @@
               Charlene
             </a>
           </li>
-          <li class="text-md font-light">
+          <li class="text-md font-light md:text:sm">
             <a
               class="flex items-center px-2 py-2 rounded-lg gap-x-3 hover:bg-gray-900 hover:text-white"
               href="#"
@@ -74,7 +76,7 @@
               Devia
             </a>
           </li>
-          <li class="text-md font-light">
+          <li class="text-md font-light md:text:sm">
             <a
               class="flex items-center px-2 py-2 rounded-lg gap-x-3 hover:bg-gray-900 hover:text-white"
               href="#"
@@ -84,7 +86,7 @@
               Gervy
             </a>
           </li>
-          <li class="text-md font-light">
+          <li class="text-md font-light md:text:sm">
             <a
               class="flex items-center px-2 py-2 rounded-lg gap-x-3 hover:bg-gray-900 hover:text-white"
               href="#"
@@ -94,7 +96,7 @@
               Jhon
             </a>
           </li>
-          <li class="text-md font-light">
+          <li class="text-md font-light md:text:sm">
             <a
               class="flex items-center px-2 py-2 rounded-lg gap-x-3 hover:bg-gray-900 hover:text-white"
               href="#"
@@ -104,7 +106,7 @@
               Michael
             </a>
           </li>
-          <li class="text-md font-light">
+          <li class="text-md font-light md:text:sm">
             <a
               class="flex items-center px-2 py-2 rounded-lg gap-x-3 hover:bg-gray-900 hover:text-white"
               href="#"
@@ -114,7 +116,7 @@
               Kyle
             </a>
           </li>
-          <li class="text-md font-light">
+          <li class="text-md font-light md:text:sm">
             <a
               class="flex items-center px-2 py-2 rounded-lg gap-x-3 hover:bg-gray-900 hover:text-white"
               href="#"
@@ -124,7 +126,7 @@
               Leester
             </a>
           </li>
-          <li class="text-md font-light">
+          <li class="text-md font-light md:text:sm">
             <a
               class="flex items-center px-2 py-2 rounded-lg gap-x-3 hover:bg-gray-900 hover:text-white"
               href="#"
@@ -134,7 +136,7 @@
               Kurt
             </a>
           </li>
-          <li class="text-md font-light">
+          <li class="text-md font-light md:text:sm">
             <a
               class="flex items-center px-2 py-2 rounded-lg gap-x-3 hover:bg-gray-900 hover:text-white"
               href="#"
@@ -144,7 +146,7 @@
               Mart
             </a>
           </li>
-          <li class="text-md font-light">
+          <li class="text-md font-light md:text:sm">
             <a
               class="flex items-center px-2 py-2 rounded-lg gap-x-3 hover:bg-gray-900 hover:text-white"
               href="#"
@@ -155,7 +157,7 @@
             </a>
           </li>
 
-          <li class="text-md font-light">
+          <li class="text-md font-light md:text:sm">
             <a
               class="flex items-center px-2 py-2 rounded-lg gap-x-3 hover:bg-gray-900 hover:text-white"
               href="#"
@@ -167,25 +169,24 @@
           </li>
         </ul>
       </nav>
-
-      <footer class="">
-        <div></div>
-      </footer>
     </aside>
 
     <!-- Main Content -->
     <main id="main-content" class="flex-1 p-6 ml-0 lg:ml-64">
-      <section id="Title" class="active">
-        <h1 class="text-lg font-bold">Welcome Fuckers!</h1>
-        <p>Relationships among laws and regulations on information system</p>
-      </section>
 
+      <section id="Title" class="active bg-gradient-to-r from-[#3E1216] to-[#561C24] py-16 mt-28 min-h-[50vh] flex items-center justify-center" data-aos="fade-up">
+            <div class="max-w-4xl mx-auto px-8 text-center" data-aos="fade-up">
+              <p class="text-white text-2xl mt-4 sm:text-4xl md:text-5xl lg:text:6xl uppercase">
+               Relationships among laws and regulations on information security
+              </p>
+            </div>
+      </section>
       <section
         id="Angeline"
-        class="hidden flex items-center justify-center min-h-[80vh]"
+        class="hidden flex items-center justify-center min-h-[80vh]" data-aos="fade-up"
       >
         <div
-          class="text-center bg-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto"
+          class="text-center bg-[#E8D8C4] p-8 rounded-lg shadow-lg max-w-4xl mx-auto"
         >
           <h1 class="text-2xl font-bold text-gray-800 mb-4">Angeline</h1>
           <p class="text-gray-600 text-base lg:text-lg leading-relaxed">
@@ -229,22 +230,21 @@
 
           <div class="flex justify-center space-x-6 mt-6">
             <!-- Social media icons (replace "#" with actual links) -->
-            <a href="#" class="text-gray-400 hover:text-pink-500 text-xl">
+            <a href="#" class="text-gray-400 hover:text-[#3E1216] text-xl">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
-            <a href="#" class="text-gray-400 hover:text-pink-500 text-xl">
+            <a href="#" class="text-gray-400 hover:text-[#3E1216] text-xl">
               <ion-icon name="logo-figma"></ion-icon>
             </a>
-            <a href="#" class="text-gray-400 hover:text-pink-500 text-xl">
+            <a href="#" class="text-gray-400 hover:text-[#3E1216] text-xl">
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </div>
         </div>
       </section>
-
       <section id="Angilo" class="hidden">
         <div
-          class="text-center bg-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto"
+          class="text-center bg-[#E8D8C4] p-8 rounded-lg shadow-lg max-w-4xl mx-auto min-h-[80vh]"
         >
           <h1 class="text-2xl font-bold text-gray-800 mb-4">Angilo</h1>
           <p class="text-gray-600 text-base lg:text-lg leading-relaxed">
@@ -287,22 +287,21 @@
           </ul>
           <div class="flex justify-center space-x-6 mt-6">
             <!-- Social media icons (replace "#" with actual links) -->
-            <a href="#" class="text-gray-400 hover:text-pink-500 text-xl">
+            <a href="#" class="text-gray-400 hover:text-[#3E1216] text-xl">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
-            <a href="#" class="text-gray-400 hover:text-pink-500 text-xl">
+            <a href="#" class="text-gray-400 hover:text-[#3E1216] text-xl">
               <ion-icon name="logo-figma"></ion-icon>
             </a>
-            <a href="#" class="text-gray-400 hover:text-pink-500 text-xl">
+            <a href="#" class="text-gray-400 hover:text-[#3E1216] text-xl">
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </div>
         </div>
       </section>
-
       <section id="Charlene" class="hidden">
         <div
-          class="text-center bg-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto"
+          class="text-center bg-[#E8D8C4] p-8 rounded-lg shadow-lg max-w-4xl mx-auto min-h-[80vh]"
         >
           <h1 class="text-2xl font-bold text-gray-800 mb-4">Charlene</h1>
           <p class="text-gray-600 text-base lg:text-lg leading-relaxed">
@@ -324,13 +323,13 @@
 
           <div class="flex justify-center space-x-6 mt-6">
             <!-- Social media icons (replace "#" with actual links) -->
-            <a href="#" class="text-gray-400 hover:text-pink-500 text-xl">
+            <a href="#" class="text-gray-400 hover:text-[#3E1216] text-xl">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
-            <a href="#" class="text-gray-400 hover:text-pink-500 text-xl">
+            <a href="#" class="text-gray-400 hover:text-[#3E1216] text-xl">
               <ion-icon name="logo-figma"></ion-icon>
             </a>
-            <a href="#" class="text-gray-400 hover:text-pink-500 text-xl">
+            <a href="#" class="text-gray-400 hover:text-[#3E1216] text-xl">
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </div>
@@ -338,7 +337,7 @@
       </section>
       <section id="Devia" class="hidden">
         <div
-          class="text-center bg-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto space-y-8"
+          class="text-center bg-[#E8D8C4] p-8 rounded-lg shadow-lg max-w-4xl mx-auto space-y-8 min-h-[80vh]"
         >
           <!-- Title -->
           <h1 class="text-3xl font-bold text-gray-800 mb-6">Devia</h1>
@@ -374,19 +373,19 @@
           <div class="flex justify-center space-x-6 mt-8">
             <a
               href="#"
-              class="text-gray-400 hover:text-pink-500 text-2xl transition duration-200 ease-in-out"
+              class="text-gray-400 hover:text-[#3E1216] text-2xl transition duration-200 ease-in-out"
             >
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
             <a
               href="#"
-              class="text-gray-400 hover:text-pink-500 text-2xl transition duration-200 ease-in-out"
+              class="text-gray-400 hover:text-[#3E1216] text-2xl transition duration-200 ease-in-out"
             >
               <ion-icon name="logo-figma"></ion-icon>
             </a>
             <a
               href="#"
-              class="text-gray-400 hover:text-pink-500 text-2xl transition duration-200 ease-in-out"
+              class="text-gray-400 hover:text-[#3E1216] text-2xl transition duration-200 ease-in-out"
             >
               <ion-icon name="logo-github"></ion-icon>
             </a>
@@ -395,7 +394,7 @@
       </section>
       <section id="Gervy" class="hidden">
         <div
-          class="text-center bg-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto"
+          class="text-center bg-[#E8D8C4] p-8 rounded-lg shadow-lg max-w-4xl mx-auto min-h-[80vh]"
         >
           <h1 class="text-2xl font-bold text-gray-800 mb-4">Gervy</h1>
           <p class="text-gray-600 text-base lg:text-lg leading-relaxed">
@@ -418,13 +417,13 @@
 
           <div class="flex justify-center space-x-6 mt-6">
             <!-- Social media icons (replace "#" with actual links) -->
-            <a href="#" class="text-gray-400 hover:text-pink-500 text-xl">
+            <a href="#" class="text-gray-400 hover:text-[#3E1216] text-xl">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
-            <a href="#" class="text-gray-400 hover:text-pink-500 text-xl">
+            <a href="#" class="text-gray-400 hover:text-[#3E1216] text-xl">
               <ion-icon name="logo-figma"></ion-icon>
             </a>
-            <a href="#" class="text-gray-400 hover:text-pink-500 text-xl">
+            <a href="#" class="text-gray-400 hover:text-[#3E1216] text-xl">
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </div>
@@ -432,7 +431,7 @@
       </section>
       <section id="Jhon" class="hidden">
         <div
-          class="text-center bg-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto"
+          class="text-center bg-[#E8D8C4] p-8 rounded-lg shadow-lg max-w-4xl mx-auto min-h-[80vh]"
         >
           <h1 class="text-2xl font-bold text-gray-800 mb-4">Jhon</h1>
           <p class="text-gray-600 text-base lg:text-lg leading-relaxed">
@@ -448,13 +447,13 @@
 
           <div class="flex justify-center space-x-6 mt-6">
             <!-- Social media icons (replace "#" with actual links) -->
-            <a href="#" class="text-gray-400 hover:text-pink-500 text-xl">
+            <a href="#" class="text-gray-400 hover:text-[#3E1216] text-xl">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
-            <a href="#" class="text-gray-400 hover:text-pink-500 text-xl">
+            <a href="#" class="text-gray-400 hover:text-[#3E1216] text-xl">
               <ion-icon name="logo-figma"></ion-icon>
             </a>
-            <a href="#" class="text-gray-400 hover:text-pink-500 text-xl">
+            <a href="#" class="text-gray-400 hover:text-[#3E1216] text-xl">
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </div>
@@ -462,7 +461,7 @@
       </section>
       <section id="Michael" class="hidden">
         <div
-          class="text-center bg-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto"
+          class="text-center bg-[#E8D8C4] p-8 rounded-lg shadow-lg max-w-4xl mx-auto min-h-[80vh]"
         >
           <h1 class="text-2xl font-bold text-gray-800 mb-4">Michael</h1>
           <p class="text-gray-600 text-base lg:text-lg leading-relaxed">
@@ -483,13 +482,13 @@
 
           <div class="flex justify-center space-x-6 mt-6">
             <!-- Social media icons (replace "#" with actual links) -->
-            <a href="#" class="text-gray-400 hover:text-pink-500 text-xl">
+            <a href="#" class="text-gray-400 hover:text-[#3E1216] text-xl">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
-            <a href="#" class="text-gray-400 hover:text-pink-500 text-xl">
+            <a href="#" class="text-gray-400 hover:text-[#3E1216] text-xl">
               <ion-icon name="logo-figma"></ion-icon>
             </a>
-            <a href="#" class="text-gray-400 hover:text-pink-500 text-xl">
+            <a href="#" class="text-gray-400 hover:text-[#3E1216] text-xl">
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </div>
@@ -497,7 +496,7 @@
       </section>
       <section id="Kyle" class="hidden">
         <div
-          class="text-center bg-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto"
+          class="text-center bg-[#E8D8C4] p-8 rounded-lg shadow-lg max-w-4xl mx-auto min-h-[80vh]"
         >
           <h1 class="text-2xl font-bold text-gray-800 mb-4">Kyle</h1>
           <p class="text-gray-600 text-base lg:text-lg leading-relaxed">
@@ -522,13 +521,13 @@
 
           <div class="flex justify-center space-x-6 mt-6">
             <!-- Social media icons (replace "#" with actual links) -->
-            <a href="#" class="text-gray-400 hover:text-pink-500 text-xl">
+            <a href="#" class="text-gray-400 hover:text-[#3E1216] text-xl">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
-            <a href="#" class="text-gray-400 hover:text-pink-500 text-xl">
+            <a href="#" class="text-gray-400 hover:text-[#3E1216] text-xl">
               <ion-icon name="logo-figma"></ion-icon>
             </a>
-            <a href="#" class="text-gray-400 hover:text-pink-500 text-xl">
+            <a href="#" class="text-gray-400 hover:text-[#3E1216] text-xl">
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </div>
@@ -536,11 +535,11 @@
       </section>
       <section id="Leester" class="hidden">
         <div
-          class="text-center bg-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto"
+          class="text-center bg-[#E8D8C4] p-8 rounded-lg shadow-lg max-w-4xl mx-auto min-h-[80vh]"
         >
           <h1 class="text-2xl font-bold text-gray-800 mb-4">Leester</h1>
           <p class="text-gray-600 text-base lg:text-lg leading-relaxed">
-            <strong>Slide 1: Introduction</strong>
+            <strong> Introduction</strong>
             <br /><br />
             <strong>Importance of Information Security:</strong> Ensures
             protection of data and systems from cyber threats. Supports
@@ -548,7 +547,7 @@
             trust and safeguards reputation. <br /><br />
             <strong>Key Objective:</strong> Understand cybersecurity laws, their
             compliance, and consequences of non-compliance. <br /><br />
-            <strong>Slide 2: Key Cybersecurity Regulations</strong>
+            <strong> Key Cybersecurity Regulations</strong>
             <br /><br />
             <strong>General Data Protection Regulation (GDPR):</strong> Protects
             EU residents' privacy and personal data. Non-compliance: Fines up to
@@ -576,13 +575,13 @@
 
           <div class="flex justify-center space-x-6 mt-6">
             <!-- Social media icons (replace "#" with actual links) -->
-            <a href="#" class="text-gray-400 hover:text-pink-500 text-xl">
+            <a href="#" class="text-gray-400 hover:text-[#3E1216] text-xl">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
-            <a href="#" class="text-gray-400 hover:text-pink-500 text-xl">
+            <a href="#" class="text-gray-400 hover:text-[#3E1216] text-xl">
               <ion-icon name="logo-figma"></ion-icon>
             </a>
-            <a href="#" class="text-gray-400 hover:text-pink-500 text-xl">
+            <a href="#" class="text-gray-400 hover:text-[#3E1216] text-xl">
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </div>
@@ -590,11 +589,11 @@
       </section>
       <section id="Kurt" class="hidden">
         <div
-          class="text-center bg-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto"
+          class="text-center bg-[#E8D8C4] p-8 rounded-lg shadow-lg max-w-4xl mx-auto min-h-[80vh]"
         >
           <h1 class="text-2xl font-bold text-gray-800 mb-4">Kurt</h1>
           <p class="text-gray-600 text-base lg:text-lg leading-relaxed">
-            <strong>Slide 3: Compliance with Laws and Regulations</strong>
+            <strong> Compliance with Laws and Regulations</strong>
             <br /><br />
             <strong>Purpose of Compliance:</strong> Protect sensitive data
             (e.g., health, credit card, consumer data). Implement risk
@@ -602,7 +601,7 @@
             <br /><br />
             <strong>Benefits:</strong> Avoids fines and legal penalties.
             Enhances customer trust and organizational reputation. <br /><br />
-            <strong>Slide 4: Dangers of Non-Compliance</strong>
+            <strong> Dangers of Non-Compliance</strong>
             <br /><br />
             <strong>1. Legal and Financial Penalties:</strong> GDPR fines: Up to
             4% of global turnover or €20M. Other regulations: Penalties up to
@@ -613,7 +612,7 @@
             <strong>3. Reputational Damage:</strong> Loss of customer trust and
             business opportunities. Negative publicity affecting long-term
             growth. <br /><br />
-            <strong>Slide 5: Key Takeaways</strong>
+            <strong> Key Takeaways</strong>
             <br /><br />
             <strong>Stay Compliant:</strong> Understand and implement
             cybersecurity regulations. <br /><br />
@@ -627,13 +626,13 @@
 
           <div class="flex justify-center space-x-6 mt-6">
             <!-- Social media icons (replace "#" with actual links) -->
-            <a href="#" class="text-gray-400 hover:text-pink-500 text-xl">
+            <a href="#" class="text-gray-400 hover:text-[#3E1216] text-xl">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
-            <a href="#" class="text-gray-400 hover:text-pink-500 text-xl">
+            <a href="#" class="text-gray-400 hover:text-[#3E1216] text-xl">
               <ion-icon name="logo-figma"></ion-icon>
             </a>
-            <a href="#" class="text-gray-400 hover:text-pink-500 text-xl">
+            <a href="#" class="text-gray-400 hover:text-[#3E1216] text-xl">
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </div>
@@ -641,7 +640,7 @@
       </section>
       <section id="Mart" class="hidden">
         <div
-          class="text-center bg-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto"
+          class="text-center bg-[#E8D8C4] p-8 rounded-lg shadow-lg max-w-4xl mx-auto min-h-[80vh]"
         >
           <h1 class="text-2xl font-bold text-gray-800 mb-4">Mart</h1>
           <p class="text-gray-600 text-base lg:text-lg leading-relaxed">
@@ -650,7 +649,7 @@
             >
             <br /><br />
             <strong
-              >Slide 1: Compliance with Information Security Laws and
+              >Compliance with Information Security Laws and
               Regulations</strong
             >
             <br /><br />
@@ -658,7 +657,7 @@
             integrity. <br /><br />
             <strong>Framework Goals:</strong> Mitigate cyber risks. Protect
             sensitive information. Adhere to legal standards. <br /><br />
-            <strong>Slide 2: Risks of Non-Compliance</strong>
+            <strong> Risks of Non-Compliance</strong>
             <br /><br />
             <strong>1. Legal & Financial Consequences:</strong>
             - GDPR: Fines up to €20M or 4% of revenue. - HIPAA and PCI DSS
@@ -668,7 +667,7 @@
             Potential data breaches. <br /><br />
             <strong>3. Reputational Damage:</strong> Loss of customer trust.
             Negative publicity and long-term business impact. <br /><br />
-            <strong>Slide 3: Examples of Non-Compliance Consequences</strong>
+            <strong> Examples of Non-Compliance Consequences</strong>
             <br /><br />
             - <strong>Equifax Breach (2017):</strong> $700M fine for failure in
             basic security. - <strong>British Airways (2018):</strong> $228M
@@ -681,13 +680,13 @@
 
           <div class="flex justify-center space-x-6 mt-6">
             <!-- Social media icons (replace "#" with actual links) -->
-            <a href="#" class="text-gray-400 hover:text-pink-500 text-xl">
+            <a href="#" class="text-gray-400 hover:text-[#3E1216] text-xl">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
-            <a href="#" class="text-gray-400 hover:text-pink-500 text-xl">
+            <a href="#" class="text-gray-400 hover:text-[#3E1216] text-xl">
               <ion-icon name="logo-figma"></ion-icon>
             </a>
-            <a href="#" class="text-gray-400 hover:text-pink-500 text-xl">
+            <a href="#" class="text-gray-400 hover:text-[#3E1216] text-xl">
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </div>
@@ -695,7 +694,7 @@
       </section>
       <section id="Mega" class="hidden">
         <div
-          class="bg-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto space-y-8"
+          class="bg-[#E8D8C4] p-8 rounded-lg shadow-lg max-w-4xl mx-auto space-y-8 min-h-[80vh]"
         >
           <h1 class="text-3xl font-bold text-gray-800 text-center mb-6">
             Mega
@@ -733,7 +732,7 @@
             </ul>
 
             <h2 class="text-xl font-semibold text-gray-700 mt-8 mb-4">
-              Slide 5: Steps to Comply with Multiple Regulations
+             Steps to Comply with Multiple Regulations
             </h2>
             <ul class="list-decimal pl-6 space-y-2 text-gray-600 text-base">
               <li>
@@ -778,29 +777,43 @@
           <div class="flex justify-center space-x-6 mt-8">
             <a
               href="#"
-              class="text-gray-400 hover:text-pink-500 text-2xl transition duration-200 ease-in-out"
+              class="text-gray-400 hover:text-[#3E1216] text-2xl transition duration-200 ease-in-out"
             >
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
             <a
               href="#"
-              class="text-gray-400 hover:text-pink-500 text-2xl transition duration-200 ease-in-out"
+              class="text-gray-400 hover:text-[#3E1216] text-2xl transition duration-200 ease-in-out"
             >
               <ion-icon name="logo-figma"></ion-icon>
             </a>
             <a
               href="#"
-              class="text-gray-400 hover:text-pink-500 text-2xl transition duration-200 ease-in-out"
+              class="text-gray-400 hover:text-[#3E1216] text-2xl transition duration-200 ease-in-out"
             >
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </div>
         </div>
       </section>
-
       <section class="hidden" id="Thanks">
-        <h1>thank you</h1>
+        
+        <div class="flex justify-center items-center min-h-[90vh] bg-[#561C24]">
+
+
+
+            <div class="p-12 rounded-lg shadow-lg text-center w-96 h-[380px] bg-white">
+              <h1 class="text-3xl font-bold text-gray-800 mb-4 uppercase">reminder</h1>
+              <p class="text-xl text-gray-600 mb-6 uppercase">Just because it's hard doesn't mean it's impossible, you can do it</p>
+              <a href="#" class="inline-block px-8 py-3 bg-[#561C24] text-white font-semibold rounded-full text-lg uppercase hover:bg-[#3E1216] transition duration-300">
+                Keep Learning
+              </a>
+            </div>
+          </div>
+          
+          
       </section>
+      
     </main>
 
     <script src="./script.js"></script>
