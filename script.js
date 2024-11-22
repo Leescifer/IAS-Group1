@@ -4,25 +4,25 @@ document.addEventListener("DOMContentLoaded", () => {
     const links = document.querySelectorAll('[data-section]');
     const sections = document.querySelectorAll('main section');
 
-    // Sidebar toggle functionality
+    // Sidebar toggle 
     toggleButton.addEventListener('click', () => {
         sidebar.classList.toggle('hidden');
     });
 
-    // Section navigation functionality
+    // Section navigation 
     links.forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
 
-            // Hide all sections
+            // Hide 
             sections.forEach(section => section.classList.add('hidden'));
 
-            // Show target section
+            // Show 
             const targetSection = document.getElementById(link.dataset.section);
             if (targetSection) targetSection.classList.remove('hidden');
         });
     });
 
-    // Set default active section
-    document.getElementById('dashboard').classList.remove('hidden');
+    // Set default 
+    document.getElementById('Title').classList.remove('hidden');
 });
